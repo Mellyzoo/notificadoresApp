@@ -1,5 +1,6 @@
 {
-	"files": [],
+	"files": ["src/main.tsx"],
+	"include": ["src/main.tsx"],
 	"references": [
 		{
 			"path": "./tsconfig.app.json"

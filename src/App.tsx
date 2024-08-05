@@ -1,14 +1,13 @@
 import "./App.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import React from "react";
 
 export default function App() {
-	return (
-		<>
+	return (		
 			<MapContainer
 				center={[-33.3604, -61.4713]}
 				zoom={8}
-				scrollWheelZoom={2}
 				style={{ height: "100vh", width: "100vw" }}
 			>
 				<TileLayer
@@ -21,6 +20,5 @@ export default function App() {
 					</Popup>
 				</Marker>
 			</MapContainer>
-		</>
 	);
 }
