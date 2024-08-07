@@ -22,7 +22,7 @@ interface Plan {
 
 interface Vivienda {
 	id: number | string;
-	cuenta: number;
+	cuenta?: number;
 	planId: number;
 	direccion: Direccion;
 	localizacion?: Localizacion;
@@ -39,7 +39,8 @@ interface Edificio {
 
 interface Departamento {
 	id: number | string;
-	cuenta: number;
+	cuenta?: number;
+	planId: number;
 	edificioId: number | string;
 	localizacion: Localizacion;
 }
@@ -62,6 +63,7 @@ interface GeoJSONGeometry {
 interface GeoJSONFeature {
 	type: "Feature";
 	geometry: GeoJSONGeometry;
+	// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 	properties: { [key: string]: any };
 }
 
