@@ -1,6 +1,7 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
+		"outDir": "./dist",
 		"composite": true,
 		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 		"target": "ES2022",
@@ -12,9 +13,12 @@
 		"allowImportingTsExtensions": true,
 		"emitDeclarationOnly": true,
 		"declaration": true,
+		"skipLibCheck": true,
 		"jsx": "react-jsx",
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
-	}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }
