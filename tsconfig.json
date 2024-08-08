@@ -1,12 +1,22 @@
 {
-	"files": ["src/main.tsx"],
-	"include": ["src/main.tsx"],
+	"compilerOptions": {
+		"module": "commonjs",
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "es2022",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true
+	},
+	"exclude": ["node_modules"],
 	"references": [
-		{
-			"path": "./tsconfig.app.json"
-		},
-		{
-			"path": "./tsconfig.node.json"
-		}
+		{ "path": "./tsconfig.app.json" },
+		{ "path": "./tsconfig.node.json" }
 	]
 }

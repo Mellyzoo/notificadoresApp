@@ -1,4 +1,4 @@
 {
-  "entryPoints": ["src/main.tsx"],
-  "out": "docs"
+	"entryPoints": ["src/main.tsx"],
+	"out": "docs"
 }

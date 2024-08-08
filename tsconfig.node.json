@@ -1,4 +1,5 @@
 {
+	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"composite": true,
 		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
@@ -7,9 +8,8 @@
 		"moduleResolution": "bundler",
 		"allowSyntheticDefaultImports": true,
 		"strict": true,
-		// "noEmit": true,  // Remove this line
-		"emitDeclarationOnly": true, // Add this line
-		"declaration": true // Add this line
+		"emitDeclarationOnly": true,
+		"declaration": true
 	},
 	"include": ["vite.config.ts"]
 }
