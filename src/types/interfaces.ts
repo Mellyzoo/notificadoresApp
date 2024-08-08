@@ -12,7 +12,6 @@ interface Direccion {
 
 interface Plan {
 	planId: number;
-	direccion?: Direccion;
 	localizacion: Localizacion;
 	area?: GeoJSONLayer;
 	cod_postal: number;
