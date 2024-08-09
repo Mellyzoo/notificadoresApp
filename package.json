@@ -9,7 +9,7 @@
 		"preview": "vite preview",
 		"lint": "biome lint src",
 		"fix": "biome lint --write",
-		"check": "pnpm clean && pnpm biome check --write *",
+		"check": "pnpm biome check --write *",
 		"biome:format:check": "biome format ./src",
 		"biome:format:write": "biome format --write ./src"
 	},
