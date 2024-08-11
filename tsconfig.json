@@ -2,6 +2,8 @@
 	"compilerOptions": {
 		"module": "ES2022",
 		"strict": true,
+		"rootDir": "src",
+		"outDir": "dist",
 		"forceConsistentCasingInFileNames": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
@@ -20,7 +22,7 @@
 			"@styles/*": ["src/styles/*"]
 		}
 	},
-	"exclude": ["node_modules"],
+	"exclude": ["coverage", "dist", "docs", "node_modules"],
 	"references": [
 		{ "path": "./tsconfig.app.json" },
 		{ "path": "./tsconfig.node.json" }
