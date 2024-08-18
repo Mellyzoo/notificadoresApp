@@ -1,4 +1,4 @@
-// ✅ cleaner and more conventional 
+// ✅ cleaner and more conventional
 // function processUsers(users: User[]): FormattedUser[] {
 //   return users
 //     .filter(user => user.age >= 18)
@@ -9,20 +9,20 @@
 //     }));
 // }
 
-// ✅ cleaner and more conventional 
+// ✅ cleaner and more conventional
 // const isAdult = (user: User): boolean => user.age >= 18;
 
 // const formatUser = (user: User): FormattedUser => ({
-  // name: user.name.toUpperCase(),
-  // age: user.age,
-  // isAdult: true
+// name: user.name.toUpperCase(),
+// age: user.age,
+// isAdult: true
 // });
 
 // function processUsers(users: User[]): FormattedUser[] {
-  // return users.filter(isAdult).map(formatUser);
+// return users.filter(isAdult).map(formatUser);
 // }
 
-// ✅ cleaner and more conventional 
+// ✅ cleaner and more conventional
 // import { useQuery } from 'react-query';
 
 // function PostList() {
