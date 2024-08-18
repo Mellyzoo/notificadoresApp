@@ -19,7 +19,6 @@
 // 	viviendas?: Vivienda[];
 // }
 
-
 // interface Vivienda {
 // 	id: number | string;
 // 	cuenta?: number;
@@ -46,7 +45,6 @@
 // }
 
 // // Definiciones de tipos GeoJSON
-
 
 // //comente porque el linter me mostraba error
 // // type GeoJSONType = "Feature" | "FeatureCollection";
