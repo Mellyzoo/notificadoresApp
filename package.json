@@ -1,6 +1,7 @@
 {
 	"name": "notificadoresapp",
 	"private": true,
+	"homepage": "https://mellyzoo.github.io/notificadoresApp/",
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
