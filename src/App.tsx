@@ -15,7 +15,7 @@ export default function App() {
 						"A new service worker is being installed:",
 						installingWorker,
 					);
-	
+
 					// You can listen for changes to the installing service worker's
 					// state via installingWorker.onstatechange
 				});
