@@ -20,5 +20,5 @@
 		"noFallthroughCasesInSwitch": true
 	},
 	"include": ["src"],
-	"exclude": ["node_modules", "dist", "public/serviceWorker.js"]
+	"exclude": ["node_modules", "dist", "serviceWorker.js"]
 }

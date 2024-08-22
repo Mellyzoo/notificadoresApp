@@ -26,5 +26,10 @@ export default function App() {
 	} else {
 		console.error("Service workers are not supported.");
 	}
-	return <Container />;
+	return (
+		<React.Fragment>
+			{" "}
+			<Container />
+		</React.Fragment>
+	);
 }
