@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     env:
-      platform: aws
+      platform: 
       region:
       account:
     runs-on: ubuntu-latest  

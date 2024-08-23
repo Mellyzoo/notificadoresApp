@@ -6,6 +6,29 @@
     <link rel="icon" type="image/png" sizes="any" href="./home.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel=" manifest" href="/manifest.json">
+    <script>if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then((registration) => {
+          registration.addEventListener("updatefound", () => {
+            // If updatefound is fired, it means that there's
+            // a new service worker being installed.
+            const installingWorker = registration.installing;
+            console.log(
+              "A new service worker is being installed:",
+              installingWorker,
+            );
+  
+            // You can listen for changes to the installing service worker's
+            // state via installingWorker.onstatechange
+          });
+        })
+        .catch((error) => {
+          console.error(`Service worker registration failed: ${error}`);
+        });
+    } else {
+      console.error("Service workers are not supported.");
+    }</script>
     <title>Notificadores App</title>
     <meta name="description" content="app de geolocalización de edificios">
     <meta name="theme-color" content="#19223c">
