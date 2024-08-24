@@ -25,6 +25,7 @@
 			"@styles/*": ["src/styles/*"]
 		}
 	},
+	"include": ["src"],
 	"exclude": ["coverage", "dist", "docs", "node_modules"],
 	"references": [
 		{ "path": "./tsconfig.app.json" },

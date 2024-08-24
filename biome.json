@@ -20,10 +20,10 @@
 		"lineEnding": "lf"
 	},
 	"vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
-  },
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
 	"javascript": {
 		"formatter": {
 			"arrowParentheses": "always",

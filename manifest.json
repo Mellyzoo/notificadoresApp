@@ -4,7 +4,7 @@
 	"name": "Notification App",
 	"description": "description",
 	"start_url": "/index.html",
-  "display": "standalone",
+	"display": "standalone",
 	"scope": "/",
 	"icons": [
 		{
