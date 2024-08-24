@@ -3,6 +3,8 @@
 	"short_name": "NOTI",
 	"name": "Notification App",
 	"description": "description",
+	"start_url": "/index.html",
+  "display": "standalone",
 	"scope": "/",
 	"icons": [
 		{
@@ -36,7 +38,5 @@
 	],
 	"background_color": "#EEE",
 	"theme_color": "#1565c0",
-	"start_url": "./?utm_source=web_app_manifest",
-	"display": "standalone",
 	"orientation": "any"
 }
