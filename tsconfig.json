@@ -16,19 +16,13 @@
 		"noUncheckedIndexedAccess": true,
 		"noEmitOnError": true,
 		"noImplicitOverride": true,
+		"noFallthroughCasesInSwitch": true,
 		"jsx": "react-jsx",
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["src/*"],
-			"@components/*": ["src/components/*"],
-			"@utils/*": ["src/utils/*"],
-			"@styles/*": ["src/styles/*"]
-		}
+		"baseUrl": "/"
 	},
-	"include": ["src"],
-	"exclude": ["coverage", "dist", "docs", "node_modules"],
+	"include": ["src/**/*"],
+	"exclude": ["coverage", "dist", "docs", "node_modules","src/vite.config.ts"],
 	"references": [
-		{ "path": "./tsconfig.app.json" },
 		{ "path": "./tsconfig.node.json" }
 	]
 }
