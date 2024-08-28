@@ -9,38 +9,39 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
-    <!-- <link rel=" manifest" href="/manifest.json"> -->
-    <script>if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/serviceWorker.js")
-          .then((registration) => {
-            registration.addEventListener("updatefound", () => {
-              // If updatefound is fired, it means that there's
-              // a new service worker being installed.
-              const installingWorker = registration.installing;
-              console.log(
-                "A new service worker is being installed:",
-                installingWorker,
-              );
-
-              // You can listen for changes to the installing service worker's
-              // state via installingWorker.onstatechange
-            });
-          })
-          .catch((error) => {
-            console.error(`Service worker registration failed: ${error}`);
-          });
-      } else {
-        console.error("Service workers are not supported.");
-      }</script>
+    <link rel=" manifest" href="/manifest.json">
     <title>Notificadores App</title>
     <meta name="description" content="app de geolocalización de edificios">
     <meta name="theme-color" content="#19223c">
+    <script>if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then((registration) => {
+          registration.addEventListener("updatefound", () => {
+            // If updatefound is fired, it means that there's
+            // a new service worker being installed.
+            const installingWorker = registration.installing;
+            console.log(
+              "A new service worker is being installed:",
+              installingWorker,
+            );
+    
+            // You can listen for changes to the installing service worker's
+            // state via installingWorker.onstatechange
+          });
+        })
+        .catch((error) => {
+          console.error(`Service worker registration failed: ${error}`);
+        });
+    } else {
+      console.error("Service workers are not supported.");
+    }</script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="root">
+      <script type="module" src="/src/main.jsx"></script>
+    </div>
   </body>
 
 </html>
