@@ -21,8 +21,6 @@
 		"baseUrl": "/"
 	},
 	"include": ["src/**/*"],
-	"exclude": ["coverage", "dist", "docs", "node_modules","src/vite.config.ts"],
-	"references": [
-		{ "path": "./tsconfig.node.json" }
-	]
+	"exclude": ["coverage", "dist", "docs", "node_modules", "src/vite.config.ts"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }
