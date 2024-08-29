@@ -5,17 +5,32 @@
 		{
 			"src": "home.png",
 			"type": "image/png",
-			"sizes": "24x24"
+			"sizes": "24x24",
+      "purpose": "any"
 		},
 		{
 			"src": "home(1).png",
 			"type": "image/png",
-			"sizes": "32x32"
+			"sizes": "32x32",
+      "purpose": "any"
 		},
 		{
 			"src": "home(2).png",
 			"type": "image/png",
-			"sizes": "64x64"
+			"sizes": "64x64",
+      "purpose": "any"
+		},
+		{
+			"src": "icons8-image-96.png",
+			"type": "image/png",
+			"sizes": "96x96",
+      "purpose": "any"
+		},
+		{
+			"src": "144.png",
+			"type": "image/png",
+			"sizes": "144x144",
+      "purpose": "any"
 		}
 	],
 	"id": ".",
@@ -38,7 +53,7 @@
 			"src": "/screenshot.jpg",
 			"type": "image/jpg",
 			"sizes": "1080x2340",
-			"form_factor": "narrow"
+			"form_factor": "wide"
 		}
 	]
 }
