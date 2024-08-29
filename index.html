@@ -16,7 +16,7 @@
     <script>if ("serviceWorker" in navigator) {
 
         navigator.serviceWorker
-          .register({ scope: '/notificadoresApp/' })
+          .register({ scope: '/notificadoresApp/serviceWorker.js' })
           .then((registration) => {
             registration.addEventListener("updatefound", () => {
               // If updatefound is fired, it means that there's
