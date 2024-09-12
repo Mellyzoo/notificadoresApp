@@ -1,3 +1,5 @@
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
+import viteReact from "@vitejs/plugin-react";
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
@@ -7,6 +9,8 @@ export default defineConfig({
 	base: "https://mellyzoo.github.io/notificadoresApp/",
 	plugins: [
 		react(),
+		TanStackRouterVite(),
+		viteReact(),
 		VitePWA({
 			registerType: "autoUpdate",
 			injectRegister: "script",
